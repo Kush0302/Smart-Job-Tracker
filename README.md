@@ -1,0 +1,1 @@
+An industry-ready AI-powered job application tracking system built with Django, DRF, React, and PostgreSQL
