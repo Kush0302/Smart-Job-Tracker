@@ -24,3 +24,31 @@
 
 ### Commit Reference
 - `feat: initialize Django project with clean backend structure`
+
+
+## Day 2 – Environment Security & DRF Configuration
+
+**Date:** <5/1/2026>
+
+### Objectives
+- Secure sensitive configuration data
+- Configure Django REST Framework (DRF)
+- Verify backend stability and API readiness
+
+### Work Done
+- Created `.env` file at project root for environment variables
+- Moved sensitive data (SECRET_KEY, DEBUG) from `settings.py` to `.env`
+- Configured `python-dotenv` to load environment variables
+- Verified that `.env` is excluded via `.gitignore`
+- Installed and verified Django REST Framework
+- Added `rest_framework` to `INSTALLED_APPS`
+- Configured basic DRF permissions for development
+- Successfully ran Django development server and verified setup via browser
+
+### Outcome
+- Backend secured against accidental secret leakage
+- API-ready Django project configured
+- Stable development environment confirmed
+
+### Commit Reference
+- `Configured environment variables and Django REST Framework`
