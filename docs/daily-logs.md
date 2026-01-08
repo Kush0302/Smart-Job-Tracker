@@ -52,3 +52,24 @@
 
 ### Commit Reference
 - `Configured environment variables and Django REST Framework`
+
+
+## Day 3 – Jobs App Initialization
+
+**Date:** <7/1/2026>
+
+### Objectives
+- Create the core Django app for job tracking
+- Integrate the app into the backend project
+
+### Work Done
+- Created `jobs` Django app using `startapp`
+- Registered the app in `INSTALLED_APPS`
+- Verified server stability after integration
+
+### Outcome
+- Job tracking module initialized
+- Backend ready for model development
+
+### Commit Reference
+- `initialize jobs app`
