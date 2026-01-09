@@ -73,3 +73,54 @@
 
 ### Commit Reference
 - `initialize jobs app`
+
+
+## Day 4 – JobApplication Model Design
+
+**Date:** <8/1/2026>
+
+### Objectives
+- Design the core database model for job tracking
+- Implement relationships for multi-user support
+
+### Work Done
+- Designed `JobApplication` model using Django ORM
+- Added fields for company, role, status, and dates
+- Linked job applications to users via ForeignKey
+- Created and applied database migrations
+- Registered model in Django admin panel
+
+### Outcome
+- Core backend data structure established
+- Database ready for API development
+
+### Commit Reference
+- `feat: added JobApplication model`
+
+
+## Day 5A – User Authentication Design & Architecture
+
+**Date:** <9/1/2026>
+
+### Objectives
+- Finalize authentication approach for the project
+- Decide user model strategy before implementation
+- Define security and data ownership rules
+- Plan authentication flow for API-based backend
+
+### Work Done
+- Finalized JWT-based authentication strategy for API-first architecture
+- Decided to use a custom Django User model for extensibility
+- Planned email-based authentication instead of username-based login
+- Defined strict ownership rule between users and job applications
+- Planned public and protected API access flow
+- Documented authentication design without writing implementation code
+
+### Outcome
+- Authentication architecture finalized
+- Secure foundation established for multi-user support
+- Reduced future refactoring by locking decisions early
+- Backend prepared for secure API development
+
+### Commit Reference
+- `docs: Finalize authentication architecture (Day 5A)`
