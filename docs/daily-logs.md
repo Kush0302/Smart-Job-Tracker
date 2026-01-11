@@ -124,3 +124,33 @@
 
 ### Commit Reference
 - `docs: Finalize authentication architecture (Day 5A)`
+
+
+## Day 5B – Custom User Model Implementation
+
+**Date:** <10/1/2026>
+
+### Objectives
+- Implement a custom Django User model
+- Replace default authentication user safely
+- Prepare backend for JWT-based authentication
+- Ensure correct user ownership across models
+
+### Work Done
+- Created `accounts` app at project level
+- Implemented custom `User` model using `AbstractUser`
+- Updated `AUTH_USER_MODEL` in `settings.py`
+- Updated `JobApplication` user reference to `settings.AUTH_USER_MODEL`
+- Reset and regenerated migrations for consistency
+- Applied migrations successfully
+- Created new superuser and verified setup
+
+### Outcome
+- Custom User model successfully integrated
+- Authentication foundation stabilized
+- Database schema aligned with future security needs
+- Project ready for JWT authentication implementation
+
+### Commit Reference
+- `feat: add custom user model and reset migrations`
+
