@@ -20,7 +20,7 @@ class JobApplication(models.Model):
         choices=STATUS_CHOICES,
         default='applied'
     )
-    applied_date = models.DateField()
+    applied_date = models.DateField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
