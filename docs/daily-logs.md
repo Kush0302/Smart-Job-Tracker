@@ -154,3 +154,34 @@
 ### Commit Reference
 - `feat: add custom user model and reset migrations`
 
+
+## Day 6 + Day 7 – JWT Authentication & Secure Job APIs
+
+**Date:** 11/01/2026
+
+### Objectives
+
+- Implement JWT-based authentication using Django REST Framework
+- Secure job-related APIs so only authenticated users can access them
+- Ensure users can only view and create their own job applications
+
+### Work Done
+
+- Installed and configured djangorestframework-simplejwt
+- Added JWT authentication to global DRF settings
+- Implemented login endpoint and tested token generation using Postman
+- Secured job APIs using IsAuthenticated permission
+- Filtered job listings by logged-in user using get_queryset()
+- Automatically assigned the authenticated user during job creation via perform_create()
+- Resolved integrity errors related to user and applied_date fields
+- Successfully tested POST and GET job APIs with JWT tokens
+
+### Outcome
+
+- Job APIs are fully secured using JWT authentication
+- Users can only access and manage their own job applications
+- Backend prevents unauthorized access and user data leakage
+- Day 6 backend functionality is production-ready
+
+### Commit Reference
+- `feat: Secured job APIs with JWT auth and user-based access control`
