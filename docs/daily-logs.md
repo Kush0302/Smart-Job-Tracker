@@ -185,3 +185,39 @@
 
 ### Commit Reference
 - `feat: Secured job APIs with JWT auth and user-based access control`
+
+
+## Day 8 – API Validation & Business Rules
+
+**Date:** 12/01/2026
+
+### Objectives
+
+- Validate job-related API inputs using Django REST Framework serializers
+- Enforce business rules to maintain data integrity
+- Ensure APIs reject invalid, duplicate, or unauthorized requests
+- Test all validation and security scenarios using Postman
+
+### Work Done
+
+- Added field-level validations in JobApplicationSerializer:
+- Prevented empty company_name and job_role
+- Blocked future dates for applied_date
+- Ensured only valid status values are accepted
+- Implemented object-level validation to prevent duplicate job applications per user
+- Ensured authenticated user is automatically assigned during job creation
+- Verified JWT-protected endpoints using Postman with Authorization headers
+- Tested multiple invalid scenarios including:
+- Missing or invalid fields
+- Duplicate job entries
+- Unauthorized access without JWT token
+- Confirmed API returns appropriate HTTP error responses (400, 401) for invalid requests
+
+### Outcome
+
+- Job APIs now strictly enforce validation and business rules
+- Duplicate and invalid job entries are fully prevented
+- API behavior is consistent, secure, and production-ready
+
+### Commit Reference
+- `feat: Added serializer validations and business rules for job APIs`
