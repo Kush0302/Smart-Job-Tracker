@@ -221,3 +221,40 @@
 
 ### Commit Reference
 - `feat: Added serializer validations and business rules for job APIs`
+
+
+## Day 9 – Authentication Hardening, Validation & Custom User Admin
+
+**Date:** 13/01/2026
+
+### Objectives
+
+- Harden JWT-based authentication
+- Enforce serializer-level business rules
+- Finalize custom email-based user model
+- Enable proper user management via Django Admin
+
+### Work Done
+
+- Secured Job APIs using JWT access tokens
+- Tested access & refresh token flows via Postman
+- Implemented serializer-level validations:
+- Empty fields prevention
+- Future applied date restriction
+- Valid job status enforcement
+- Duplicate job application prevention per user
+- Finalized custom User model with email as USERNAME_FIELD
+- Configured UserAdmin using BaseUserAdmin
+- Enabled creation and management of normal users from Django Admin
+- Cleaned incorrectly created users and recreated them correctly
+- Verified all authentication and validation flows end-to-end
+
+### Outcome
+
+- Production-ready authentication and authorization layer
+- Clean, secure, and validated Job APIs
+- Fully functional custom user system with admin support
+- Backend now meets real-world security and data integrity standards
+
+### Commit Reference
+- `feat(auth): Tested API Edge Cases, Permissions`
