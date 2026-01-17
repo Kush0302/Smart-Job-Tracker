@@ -258,3 +258,32 @@
 
 ### Commit Reference
 - `feat(auth): Tested API Edge Cases, Permissions`
+
+
+## Day 10 + 11 + 12 – API Quality, Pagination & Ordering
+
+**Date:** 16/01/2026
+
+### Objectives
+
+- Improve API robustness and scalability
+- Add pagination and ordering support
+- Enforce strict user-level permissions
+
+### Work Done
+
+- Configured global DRF pagination settings
+- Verified pagination across multiple pages using Postman
+- Implemented ordering using DRF OrderingFilter
+- Tested combined pagination and ordering behavior
+- Verified invalid page handling
+- Ensured user-scoped data access remains intact
+
+### Outcome
+
+- Production-ready, scalable Job APIs
+- Backend prepared for analytics and dashboards
+- Phase 1 backend implementation completed
+
+### Commit Reference
+- `feat(api):  Added pagination, ordering, and permission hardening`
