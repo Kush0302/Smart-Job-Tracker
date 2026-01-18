@@ -287,3 +287,37 @@
 
 ### Commit Reference
 - `feat(api):  Added pagination, ordering, and permission hardening`
+
+
+## Day 13 – Analytics Foundation (Phase 2)
+
+**Date:** 17/01/2026
+
+### Objectives
+
+- Start Phase 2 with backend-first analytics
+- Create a clean analytics architecture
+- Implement status-wise job application aggregation
+- Validate analytics data using real database entries
+
+### Work Done
+
+- Created a dedicated analytics Django app for separation of concerns
+- Added the analytics app to INSTALLED_APPS
+- Implemented AnalyticsOverviewAPIView using DRF
+- Used database-level aggregation (values + annotate) to compute:
+- Total job applications
+- Status-wise job counts
+- Scoped analytics data to the authenticated user
+- Created analytics/urls.py and connected it to the main URL configuration
+- Tested the endpoint using authenticated API requests
+
+### Outcome
+
+- Successfully retrieved real analytics data:
+- Confirmed correct JWT authentication and user-level filtering
+- Established a solid backend analytics foundation for dashboards and charts
+- Phase 2 officially initiated with production-style architecture
+
+### Commit Reference
+`feat: add analytics overview API with status aggregation`
